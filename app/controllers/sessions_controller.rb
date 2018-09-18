@@ -6,8 +6,12 @@ class SessionsController < ApplicationController
     def create
         user = User.find_by_email(session_params[:email])
         if user and user.valid_password?(session_params[:password])
-            user.generate_token
-            render json: user.as_json({only: [:id,:email,:authentication_token]}),status: :created
+            if user.approved
+                user.generate_token
+                render json: user.as_json({only: [:id,:email,:authentication_token]}),status: :created
+            else
+                render json: {message: "Your Account is Pending Approval"},status: :forbidden
+            end
         else
             render json: {message: "Invalid Credentilas"}, status: :unauthorized
         end

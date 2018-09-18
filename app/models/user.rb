@@ -13,4 +13,8 @@ class User < ApplicationRecord
       break if not all_tokens.include?(token) and self.update(authentication_token: token) 
     end
   end
+  
+  def is_approved
+    self.approved ? "Yes":"No"
+  end
 end

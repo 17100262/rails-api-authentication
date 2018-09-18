@@ -47,3 +47,5 @@ gem 'devise'
 gem 'awesome_print'
 gem 'figaro'
 gem 'simple_token_authentication', '~> 1.0' # see semver.org
+gem 'foreman'
+gem "cancancan"

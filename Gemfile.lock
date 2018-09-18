@@ -49,6 +49,7 @@ GEM
       msgpack (~> 1.0)
     builder (3.2.3)
     byebug (10.0.2)
+    cancancan (2.3.0)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
     devise (4.5.0)
@@ -160,6 +161,7 @@ DEPENDENCIES
   awesome_print
   bootsnap (>= 1.1.0)
   byebug
+  cancancan
   devise
   figaro
   foreman
