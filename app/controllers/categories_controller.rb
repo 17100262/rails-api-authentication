@@ -1,17 +1,18 @@
 class CategoriesController < ApplicationController
-  before_action :authenticate_user_from_token, except: [:index]
+  before_action :authenticate_user_from_token, except: [:index,:show]
   before_action :set_category, only: [:show, :update, :destroy]
+  authorize_resource
 
   # GET /categories
   def index
     @categories = Category.all
 
-    render json: @categories.as_json({only: [:id,:name]})
+    render json: {categories: @categories.as_json({only: [:id,:name]}) ,status: 200}, status: :ok
   end
 
   # GET /categories/1
   def show
-    render json: @category
+    render json: {category: @category,status: 200},status: :ok
   end
 
   # POST /categories
@@ -19,24 +20,25 @@ class CategoriesController < ApplicationController
     @category = Category.new(category_params)
 
     if @category.save
-      render json: @category, status: :created, location: @category
+      render json: {category: @category, status: 201,message:"Category created successfully"},status: :created
     else
-      render json: @category.errors, status: :unprocessable_entity
+      render json: {message: @category.errors.full_messages, status: 422}, status: :unprocessable_entity
     end
   end
 
   # PATCH/PUT /categories/1
   def update
     if @category.update(category_params)
-      render json: @category
+      render json: {category: @category,status: 200,message: "Category Updated Successfully"}
     else
-      render json: @category.errors, status: :unprocessable_entity
+      render json: {message: @category.errors.full_messages,status: 422 },status: :unprocessable_entity
     end
   end
 
   # DELETE /categories/1
   def destroy
     @category.destroy
+    render json: {message: "Category deleted successfully",status: 204}
   end
 
   private

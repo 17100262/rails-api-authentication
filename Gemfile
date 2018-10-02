@@ -49,3 +49,7 @@ gem 'figaro'
 gem 'simple_token_authentication', '~> 1.0' # see semver.org
 gem 'foreman'
 gem "cancancan"
+gem 'paperclip'
+# gem "paperclip-ffmpeg"
+gem 'paperclip-av-transcoder'
+gem 'aws-sdk', '~> 3'

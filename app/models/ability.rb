@@ -3,8 +3,15 @@ class Ability
 
   def initialize(user)
     
-    can :user_management,:admin if user.admin
-    can :approve_user,:admin if user.admin
+    can :read,Category
+    if(user and user.admin)
+      can :user_management,:admin
+      can :approve_user,:admin
+      can :manage, [Category,Campaign]
+    elsif(user)
+      can [:create,:read,:destroy],Campaign,:user_id => user.id
+    end
+    
     
     # Define abilities for the passed in user here. For example:
     #

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  
   scope 'api' do
     # devise_for :users,controller:{sessions: 'sessions'}
     # devise_for :users, controllers: { registrations: 'users/registrations' }
@@ -11,8 +12,9 @@ Rails.application.routes.draw do
     resources :registrations, only: [:create]
     get :user_management, controller: :admin
     resources :categories
-    # resources :users
-    # resources users 
+    resources :campaigns
+    put :update_profile,to: "users#update"
+    # resources :users,only: [:update]
     get :profile,controller: 'users'
     put :approve_user,controller: 'admin'
   end

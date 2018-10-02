@@ -21,8 +21,51 @@
 .App-intro {
   font-size: large;
 }
+.loader{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -160px;
+  margin-left: -244px;
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+label{
+  margin-bottom: 0px;
+}
+.form-control-lg {
+    height: calc(2.3rem + 2px);
+}
+.progress{
+  height: 3px !important;
+}
+.fund-list li{
+  border: 1px solid #dfdfdf !important;
+}
+.project-page .btn-success{
+  border-radius: 0 !important;
+}
+.form-control{
+  border-color: #fff !important;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.17) !important;
+}
+
+.dis-pic{
+  width: 100%;
+}
+.tbl-style{
+  border-bottom:1px solid #DCDEDD;
+}
+
+.heading{
+  font-family: "Cooper Light", Georgia, Times, "Times New Roman", serif;
+}
+.img-small{
+  height:80px !important;
+  width:80px !important;
 }
