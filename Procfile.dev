@@ -1,2 +1,2 @@
-web: bash -c "cd client && PORT=8080 npm start"
 api: sudo service postgresql start && rails server -b $IP -p 8081
+web: bash -c "PORT=8080 yarn --cwd client start"
