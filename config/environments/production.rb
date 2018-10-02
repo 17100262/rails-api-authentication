@@ -79,6 +79,17 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
+  
+  
+  config.paperclip_defaults = {
+    storage: :s3,
+    s3_credentials: {
+      bucket: ENV['S3_BUCKET_NAME'],
+      access_key_id: ENV['access_key_id'],
+      secret_access_key: ENV['secret_access_key'],
+      s3_region: ENV['AWS_REGION'],
+    }
+  }
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
