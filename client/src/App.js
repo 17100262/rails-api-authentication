@@ -226,7 +226,7 @@ class App extends Component {
       lastname: e.target.lastname.value
     },()=>{
       // console.log(this.state);
-      fetch('api/registrations', {
+      fetch('/api/registrations', {
       method: "POST",
       body: JSON.stringify({
         "registration": {
@@ -278,7 +278,7 @@ class App extends Component {
           e.then(err => {
             console.log(err);
             this._notificationSystem.addNotification({
-              message: `${err.errors.join()}`,
+              message: `${err.errors}`,
               level: 'error'
   
             });
