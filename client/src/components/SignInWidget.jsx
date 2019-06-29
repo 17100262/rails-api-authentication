@@ -48,61 +48,53 @@ import MaterialSignIn from './Material/MaterialSignIn';
 
 const PortoSignIn = function(props){
   return(
-    <section className="body-sign">
-      <div className="center-sign">
-        
-        <div className="panel card-sign">
-          <div className="card-title-sign mt-3">
-            <h2 className="title font-weight-bold m-0 title-active">Log In</h2>
-            <Link to="/signup">
-            <h2 className="title font-weight-bold m-0"> Sign Up</h2>
-            </Link>
-          </div>
-          <div className="card-body">
+    <section className="section">
+      <div className="container">
+      <div className="row">
+        <div className="offset-lg-3 col-lg-6 mb-5 mb-lg-0">
+          <div className="border rounded h-100 p-5">
+            <span className="top-sub-title text-color-primary">ALREADY A MEMBER?</span>
+            <h2 className="ont-weight-bold textt-4 mb-4">Sign In</h2>
             <form onSubmit={props.formSubmitHandler}>
-              <div className="form-group mb-3">
-                <label>Email</label>
-                <div className="input-group">
-                  <input name="email" type="text" className="form-control form-control-lg" />
-                  <span className="input-group-append">
-                    <span className="input-group-text">
-                      <i className="fas fa-user" />
-                    </span>
-                  </span>
+            <div className="form-row">
+              <div className="form-group col mb-2">
+                <label htmlFor="frmSignInEmail">EMAIL</label>
+                <input type="email" name="email" className="form-control bg-light-5 rounded border-0 text-1" id="frmSignInEmail" required />
+              </div>
+            </div>
+              
+              <div className="form-row">
+                <div className="form-group col">
+                  <label htmlFor="frmSignInPassword">PASSWORD</label>
+                  <input type="password" className="form-control bg-light-5 rounded border-0 text-1" name="password" id="frmSignInPassword" required />
                 </div>
               </div>
-              <div className="form-group mb-3">
-                <div className="clearfix">
-                  <label className="float-left">Password</label>
-                  <a href="pages-recover-password.html" className="float-right">Lost Password?</a>
-                </div>
-                <div className="input-group">
-                  <input name="password" type="password" className="form-control form-control-lg" />
-                  <span className="input-group-append">
-                    <span className="input-group-text">
-                      <i className="fas fa-lock" />
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-sm-8">
-                  <div className="checkbox-custom checkbox-default">
-                    <input id="RememberMe" name="rememberme" type="checkbox" />
-                    <label htmlFor="RememberMe">Remember Me</label>
+              <div className="form-row mb-3">
+                <div className="form-group col">
+                  <div className="form-check checkbox-custom checkbox-custom-transparent checkbox-default">
+                    <input className="form-check-input" id="RememberMe" name="rememberme" />
+                    <label className="form-check-label" htmlFor="RememberMe">
+                      Remember me
+                    </label>
                   </div>
                 </div>
-                <div className="col-sm-4 text-right">
-                  <button type="submit" className="btn btn-primary mt-2">Sign In</button>
+                <div className="form-group col text-right">
+                  <a href="/" className="forgot-pw d-block">Forgot password?</a>
                 </div>
               </div>
-              {/*
+              <div class="row align-items-center">
+								<div class="col text-right">
+									<button type="submit" class="btn btn-primary btn-rounded btn-v-3 btn-h-3 font-weight-bold">SIGN IN</button>
+								</div>
+							</div>
+              
               <p className="text-center">Don't have an account yet? <Link to="/signup">Sign Up!</Link></p>
-              */
-              }
+              
+
             </form>
           </div>
         </div>
+      </div>
       </div>
     </section>
 

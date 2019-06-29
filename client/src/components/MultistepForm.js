@@ -72,7 +72,7 @@ export default class MultistepForm extends Component {
     }
 
     formsubmit(e){
-      var values  = {}
+      // var values  = {}
       e.preventDefault();
       console.log(this.state);
       this.setState({

@@ -300,14 +300,14 @@ class App extends Component {
       return(
         <React.Fragment>
         <NotificationSystem ref="notificationSystem" />
-        <img className="loader" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
+        <img alt="" className="loader" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" />
         </React.Fragment>
       );
 
     } else{
         return (
           
-          <div className="app-content">
+          <div className="body">
             {/* <ReactNotification ref={this.notificationDOMRef} /> */}
             <NotificationSystem ref="notificationSystem" />
            

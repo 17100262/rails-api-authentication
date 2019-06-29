@@ -7,8 +7,8 @@ export const CategoryForm = (props) => {
     <section className="card">
         <header className="card-header">
         <div className="card-actions">
-            <a href="#" className="card-action card-action-toggle" data-card-toggle />
-            <a href="#" className="card-action card-action-dismiss" data-card-dismiss />
+            <span className="card-action card-action-toggle" data-card-toggle ></span>
+            <span className="card-action card-action-dismiss" data-card-dismiss ></span>
         </div>
         <h2 className="card-title">Category</h2>
         </header>

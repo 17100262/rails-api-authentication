@@ -9,7 +9,7 @@ class Ability
       can :approve_user,:admin
       can :manage, [Category,Campaign]
     elsif(user)
-      can [:create,:read,:destroy],Campaign,:user_id => user.id
+      can [:create,:read,:destroy,:update],Campaign,:user_id => user.id
     end
     
     

@@ -11,12 +11,14 @@ class Campaign < ApplicationRecord
     
     has_many :rewards, dependent: :destroy
     has_many :project_faqs, dependent: :destroy
+    # has_one :user
     accepts_nested_attributes_for :rewards, allow_destroy: true
     accepts_nested_attributes_for :project_faqs, allow_destroy: true
+    
   
     belongs_to :category
     belongs_to :user
-    
+    accepts_nested_attributes_for :user
     def project_image_url
       project_image.url
     end

@@ -18,7 +18,7 @@ const ProjectInfo = function(props){
           <span className=""> days to go</span>
           {/* <div className="my-3">This project will only be funded if at least $127,000 is raised by January 24, 2020 </div> */}
           <div className="funding-minimum">
-            <a className="btn btn-success w-100 text-center" href="#"> Back This Project</a>
+            <a className="btn btn-success w-100 text-center" href="/"> Back This Project</a>
             {/*                      <small>$0 minimum</small>
           */}
           </div>
@@ -32,7 +32,7 @@ const ProjectInfo = function(props){
         <div className="col-9">
           <div className="author-info">
             {/* <div className="psponsor">Project sponsor </div> */}
-            <a href="#">{props.campaign.user_name}</a>
+            <a href="/">{props.campaign.user_name}</a>
             <p>
               {/* <i className="fa fa-map-marker" aria-hidden="true" /> <b>Canada</b>, Ottawa  */}
             </p>
@@ -55,9 +55,9 @@ export const RewardComp = function(props){
         <p className="mb-2"> {props.reward.estimated_delivery} </p>
         {/* <p className="mb-2">0 Backers </p> */}
       </div>
-      <a href="#">
+      <a href="/">
         <div className="min-amount">
-          <input type="button" defaultValue={`Fund \$${props.reward.pledge_amount}`} className="btn btn-success w-100" />
+          <input type="button" defaultValue={`Fund ${props.reward.pledge_amount}`} className="btn btn-success w-100" />
         </div>
       </a>
     </li>

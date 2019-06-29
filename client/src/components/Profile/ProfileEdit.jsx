@@ -8,8 +8,8 @@ const ProfileForm = function(props){
         <section className="card">
         <header className="card-header">
           {/* <div className="card-actions">
-            <a href="#" className="card-action card-action-toggle" data-card-toggle />
-            <a href="#" className="card-action card-action-dismiss" data-card-dismiss />
+            <a href="/" className="card-action card-action-toggle" data-card-toggle />
+            <a href="/" className="card-action card-action-dismiss" data-card-dismiss />
           </div> */}
           <h2 className="card-title">Profile Edit</h2>
         </header>
@@ -86,7 +86,7 @@ export default class ProfileEdit extends Component {
         formData.append('user[location]',e.target.location.value);
         formData.append('user[biography]',e.target.biography.value);
 
-        if(e.target.profile_picture.files[0] != undefined){
+        if(e.target.profile_picture.files[0] !== undefined){
             formData.append('user[profile_picture]',e.target.profile_picture.files[0]);
 
         }

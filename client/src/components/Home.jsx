@@ -122,7 +122,7 @@ export default () => {
       <div className="col-md-10">
         <h1 className="heading">If you feel insecure about an idea, that’s usually the most valuable one.</h1>
         <p>PERFORMANCE DUO FLUCT IN THE CREATIVE INDEPENDENT, A KICKSTARTER-PUBLISHED RESOURCE FOR CREATIVE PEOPLE
-          <a href="#" style={{color: 'black'}}>READ MORE <i className="fas fa-arrow-right" /></a></p>
+          <a href="/" style={{color: 'black'}}>READ MORE <i className="fas fa-arrow-right" /></a></p>
       </div>
     </div>
   </div>
@@ -148,7 +148,7 @@ export default () => {
               <img alt="hello" src="pics2/hand.png" style={{width: '100%'}} />
             </div>
             <p className="p-2">
-              <a href="#" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
+              <a href="/" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
             </p>
           </div>    
         </div>
@@ -160,7 +160,7 @@ export default () => {
               <img alt="hello" src="pics2/hand.png" style={{width: '100%'}} />
             </div>
             <p className="p-2">
-              <a href="#" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
+              <a href="/" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
             </p>
           </div>    
         </div>
@@ -172,7 +172,7 @@ export default () => {
               <img alt="hello" src="pics2/hand.png" style={{width: '100%'}} />
             </div>
             <p className="p-2">
-              <a href="#" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
+              <a href="/" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
             </p>
           </div>    
         </div>
@@ -185,7 +185,7 @@ export default () => {
         <div className="accordion">
           <div className="card">
             <p className="p-2">
-              <a href="#" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
+              <a href="/" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
             </p>
             <div className="col-md-4 pb-2">  
               <img alt="hello" src="pics2/food.jpeg" style={{width: 80, height: 80}} />
@@ -197,7 +197,7 @@ export default () => {
         <div className="accordion">
           <div className="card">
             <p className="p-2">
-              <a href="#" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
+              <a href="/" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
             </p>
             <div className="col-md-4 pb-2">  
               <img alt="hello" src="pics2/cap.png" style={{width: 80, height: 80}} />
@@ -209,7 +209,7 @@ export default () => {
         <div className="accordion">
           <div className="card">
             <p className="p-2">
-              <a href="#" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
+              <a href="/" style={{color: 'black'}}>Bootstrap 4 Images. Rounded Corners. The .rounded class adds rounded corners to an image: Circle.</a>
             </p>
             <div className="col-md-4 pb-2">  
               <img alt="hello" src="pics2/card1.jpeg" style={{width: 80, height: 80}} />
@@ -223,7 +223,7 @@ export default () => {
   <div className="container-fluid px-5 pb-5 text-center">
     <h3 className="p-3">Subscribe to our weekly newsletter</h3>
     <p className="pb-4">A weekly roundup of the best and brightest projects on Kickstarter, handpicked by our team.</p>
-    <a href="#" className="btn btn-secondary bg-dark">Subscribe Now</a>
+    <a href="/" className="btn btn-secondary bg-dark">Subscribe Now</a>
   </div>
   <hr style={{border: '1px solid'}} />
   <div className="container-fluid pb-5 px-5 pt-3">

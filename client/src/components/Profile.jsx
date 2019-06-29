@@ -11,7 +11,7 @@ const ProfileComp = (item) => {
         
 					<div className="card-body">
 						<div className="thumb-info mb-3 text-center">
-							<img src={item.profile.profile_picture_url} className="rounded img-fluid img-thumbnail" />
+							<img src={item.profile.profile_picture_url} className="rounded img-fluid img-thumbnail" alt="" />
 							<div className="thumb-info-title">
 								<span className="thumb-info-inner">{item.profile.firstname} {item.profile.lastname}</span>
 								<div className="small">{item.profile.email}</div>

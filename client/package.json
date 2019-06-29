@@ -2,7 +2,7 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://localhost:3001",
+  "proxy": "https://react-rails-a17100262.c9users.io:8081",
   "dependencies": {
     "@material-ui/core": "^3.1.0",
     "loaders.css": "^0.1.2",
